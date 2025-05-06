@@ -1,0 +1,10 @@
+.power-bar {
+    height: 1rem;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}

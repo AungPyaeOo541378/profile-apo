@@ -12,7 +12,7 @@
     </head>
     <body>
         <!-- Nav Bar Section -->
-        <nav class="bg-gray-800">
+        <nav class="bg-gray-800 sticky top-0">
             <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div class="relative flex h-16 items-center justify-between">
                     <div
@@ -47,15 +47,16 @@
                         <div class="hidden sm:ml-6 sm:block">
                             <div class="flex space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="#"
-                                    class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                                    aria-current="page">Dashboard</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                                <a href="#"
-                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+                                <a href="#home"
+                                    class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white nav-items"
+                                    aria-current="page">Home</a>
+                                <a href="#skill"
+                                    class="rounded-md  px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-items">Skill</a>
+                                <a href="#project"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-items">Projects</a>
+                                <a href="#contact-me"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white nav-items">Contact
+                                    Me</a>
                             </div>
                         </div>
                     </div>
@@ -83,8 +84,10 @@
         <br>
         <!-- Home -->
         <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-whoite">
-            <div class="bg-black p-5 col-span-1">
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white"
+            id="home">
+            <!-- Left Side -->
+            <div class="bg-black p-5 col-span-1 rounded-tr-[5rem]">
 
                 <img src="./images/photo_2025-05-06_13-28-30.jpg" alt
                     class="rounded-full w-60 mx-auto mt-5">
@@ -100,6 +103,8 @@
                     class="rounded-md w-50 mx-auto">
 
             </div>
+            <!-- Left Side -->
+            <!-- Right Side -->
             <div class="col-span-1 md:col-span-2">
                 <div class="bg-white-200 p-5 mt-10">
                     <p class="text-3xl">About Me</p>
@@ -119,8 +124,9 @@
                         <span>09912442013</span></p>
                     <br>
                     <p><i class="fa-brands fa-facebook"></i>
-                        <a href="https://shorturl.at/neGTK">https://shorturl.at/neGTK</a>
-                      </p>
+                        <a target="_blank"
+                            href="https://shorturl.at/neGTK">https://shorturl.at/neGTK</a>
+                    </p>
                     <br>
                 </div>
                 <br>
@@ -131,10 +137,11 @@
                         <li>A website design perspective.</li>
                         <li>I passed Net Test N2 for Japanese language.</li>
                         <li>I can work in accordance with Deadline.</li>
-                        <li>I can work in a team and have a strong desire to learn.</li>
+                        <li>I can work in a team and have a strong desire to
+                            learn.</li>
                         <li>I can complete tasks within the specified time.</li>
                         <li>I have good teamwork and communication skills.</li>
-                
+
                     </ul>
                     <br>
                 </div>
@@ -155,9 +162,134 @@
                     <br>
                 </div>
             </div>
+            <!-- Right Side -->
         </div>
         <!-- Home -->
+        <!-- Skill -->
+        <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white" id="skill">
+            <p class="text-3xl text-center">Skill</p>
+            <br>
+            <p class="text-xl">Professional Skills</p>
+            <br>
+            <div class="grid grid-cols-3">
+                <div class="col-span-1">
+                    <p>
+                        <i
+                            class="fa-brands fa-html5 text-3xl"></i>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</span>
+                    </p>
+                    <p>
+                        <i
+                            class="fa-brands fa-html5"></i>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</span>
+                    </p><p>
+                        <i
+                            class="fa-brands fa-html5"></i>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</span>
+                    </p><p>
+                        <i
+                            class="fa-brands fa-html5"></i>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML</span>
+                    </p>
 
+                </div>
+                <div class="col-span-2">
+                    <div class="power-bar mb-3"></div>
+                    <div class="power-bar mb-3"></div>
+                    <div class="power-bar mb-3"></div>
+                    <div class="power-bar"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Skill -->
+
+        <!-- Project -->
+        <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white" id="project">
+            <div>
+                <p class="text-3xl text-center">Projects</p>
+                <br>
+                <div class="grid grid-cols-5 gap-10">
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                    <div
+                        class="shadow-lg border border-gray-200 rounded-lg p-3">
+                        <p>Header</p>
+                        <img src="./images/place-holder.webp" alt>
+                        <p>Footer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Project -->
+
+        <!-- Contact Me -->
+        <div class="mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-white"
+            id="contact-me">
+            <p class="text-3xl text-center">Contact Me</p>
+            <br>
+            <div class="flex justify-between px-32 flex-wrap">
+                <div
+                    class="shadow-lg rounded-lg border border-gray-200 px-12 py-2">Call</div>
+                <div
+                    class="shadow-lg rounded-lg border border-gray-200 px-12 py-2">Email</div>
+                <div
+                    class="shadow-lg rounded-lg border border-gray-200 px-12 py-2">Facebook</div>
+            </div>
+        </div>
+        <!-- Contact Me -->
     </body>
     <script src="app.js"></script>
 </html>
