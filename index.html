@@ -1,13 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
-<script src="app.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <!-- Nav Bar Section -->
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div
+                        class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button"
+                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="block size-6" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true"
+                                data-slot="icon">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+
+                            <svg class="hidden size-6" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true"
+                                data-slot="icon">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="#"
+                                    class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                                    aria-current="page">Dashboard</a>
+                                <a href="#"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                                <a href="#"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                                <a href="#"
+                                    class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pt-2 pb-3">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#"
+                        class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                        aria-current="page">Dashboard</a>
+                    <a href="#"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                    <a href="#"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                    <a href="#"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar Section -->
+        <br>
+        <!-- Home -->
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto max-w-7xl p-2 sm:p-6 lg:px-8 bg-gray-400">
+            <div class="bg-black p-5 col-span-1">
+
+                <img src="./images/photo_2025-05-06_13-28-30.jpg" alt
+                    class="rounded-full w-56 mx-auto">
+                <br><br> <br><br>
+                <p class="text-3xl text-white text-center">Mr Aung Pyae Oo</p>
+                <br><br>
+                <p class="text-3xl text-white text-center"> Web Developer</p>
+                <br><br>
+                <img src="./images//undraw.svg" alt
+                    class="rounded-md w-56 mx-auto">
+                <br><br>
+                <img src="./images//undraw.svg" alt
+                    class="rounded-md w-56 mx-auto">
+
+            </div>
+            <div class="col-span-1 md:col-span-2">
+                <div class="bg-red-200 p-5">
+                    <p class="text-3xl">About Me</p>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <br>
+                    <p><i class="fa-solid fa-phone"></i>
+                        <span>09763684400</span></p>
+                    <br>
+                    <p><i class="fa-brands fa-facebook"></i>
+                        <span>https://www.google.com.mm</span></p>
+                    <br>
+                </div>
+                <br>
+                <div class="bg-red-200 p-5">
+                    <p class="text-3xl">A also have </p>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <br>
+                <div class="bg-red-200 p-5">
+                    <p class="text-3xl">I was graduated from</p>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- Home -->
+
+    </body>
+    <script src="app.js"></script>
 </html>
